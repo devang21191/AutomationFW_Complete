@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="NopCommerce Test Suite">
+    <listeners>
+        <listener class-name="utils.SuiteListener" />
+    </listeners>
+    
+    <test name="LoginTest">
+        <classes>
+            <class name="web.nopcommerce.testScripts.Register_Test">
+                <!--<methods>
+                    <include name="goToRegisterPage" />
+                </methods>-->
+            </class>
+
+            <class name="web.nopcommerce.testScripts.Login_Test" />
+
+<!--            <class name="api.petstore.testScripts.UserTests" />-->
+
+        </classes>
+    </test>
+</suite>
